@@ -7,6 +7,12 @@
   .bold-text{
     font-weight: bold;
   }
+  .square{
+    background: orange;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+  }
   </style>
 </head>
 <body>
@@ -22,9 +28,34 @@
       <li class="recipe-item bold-text">garam</li>
     
     </ul>
+
+    <button id="button">Tambah item</button>
  
   </div>
-  <p id="paragraf">Hallo <span>dunia</span></p>
-  <script src="./script.js"></script>
+
+  <div class="square" onclick="changeBackgroundColor()">
+    <p>Ini kotak</p>
+  </div>
+
+  <br>
+  <br>
+
+  <form onsubmit="submitForm(event)"> 
+    <div>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- <button type="submit" onclick="submit(event)">login</button> -->
+
+
+  <!-- <script src="./script.js"></script> -->
+  <script src="./submit.js"></script>
 </body>
 </html>
